@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="71dp"
+    android:screenOrientation="portrait"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="제목"
+                android:fontFamily="@font/nanumgothicextrabold"
+                android:layout_marginStart="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/titletime"
+                    android:layout_width="20dp"
+                    android:layout_weight="3"
+                    android:text="시간"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/nanumgothicbold"/>
+
+                <TextView
+                    android:id="@+id/titlefriend"
+                    android:layout_width="30dp"
+                    android:layout_weight="2"
+                    android:text="@string/Id"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/nanumgothicbold"/>
+
+                <TextView
+                    android:id="@+id/titleblank"
+                    android:layout_width="40dp"
+                    android:layout_weight="15"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:id="@+id/replyimage"
+                    android:layout_width="5dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/main_todo1"
+                    app:srcCompat="@drawable/reply" />
+
+                <TextView
+                    android:id="@+id/titlereply"
+                    android:layout_width="20dp"
+                    android:layout_weight="2"
+                    android:text="댓글"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/nanumgothicbold"/>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center|right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:background="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

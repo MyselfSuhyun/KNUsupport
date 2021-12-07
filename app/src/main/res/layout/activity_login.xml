@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="20"
+        android:layout_gravity="center"
+        android:contentDescription="@string/Logo"
+        android:src="@drawable/main"
+        android:fontFamily="@font/nanumgothicbold"/>
+
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:autofillHints="아이디"
+        android:ems="10"
+        android:hint="@string/LoginID"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/nanumgothicbold"/>
+
+    <EditText
+        android:id="@+id/passText"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:autofillHints="비밀번호"
+        android:ems="10"
+        android:hint="@string/LoginPW"
+        android:inputType="textPassword" />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checkauto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/Autologin" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="9"
+            android:text="@string/Login"
+            android:fontFamily="@font/nanumgothicbold"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/round_button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/search_password"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="40dp"
+            android:layout_weight="2"
+            android:onClick="search_password"
+            android:text="@string/searchpass"
+            android:fontFamily="@font/nanumgothicbold"/>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="40dp"
+            android:layout_weight="2"
+            android:text="@string/register"
+            style="?android:attr/borderlessButtonStyle"
+            android:fontFamily="@font/nanumgothicbold"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

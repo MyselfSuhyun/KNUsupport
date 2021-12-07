@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/Welcomemessage"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="15"
+            android:text="@string/Count1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nanumgothicextrabold"/>
+
+
+
+        <ImageView
+            android:id="@+id/logoutbutton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/ic_launcher_background"
+            android:fontFamily="@font/nanumgothicextrabold"
+            android:onClick="btn_logout"
+            android:text="@string/logout"
+            android:textColor="#6D91D2"
+            android:textSize="20sp"
+            app:srcCompat="@drawable/setting"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="4"
+        android:contentDescription="@string/main_todo1"
+        android:onClick="bluetoothbutton"
+        app:srcCompat="@drawable/main" />
+
+    <Button
+        android:id="@+id/helpbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="2"
+        android:onClick="helpbutton"
+        android:text="@string/help"
+        android:textSize="30dp"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/nanumgothicbold"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/community"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="2"
+        android:onClick="communitybutton"
+        android:text="@string/community"
+        app:layout_constraintBottom_toTopOf="@+id/announce"
+        app:layout_constraintTop_toBottomOf="@+id/helpbutton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="30dp"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/nanumgothicbold"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/announce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="2"
+        android:onClick="announcebutton"
+        android:text="장애인 편의시설"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="30dp"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/nanumgothicbold"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

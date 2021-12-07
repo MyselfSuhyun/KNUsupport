@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:id="@+id/Accountchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="개인정보변경"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+
+        <EditText
+            android:id="@+id/emailchange"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="이메일"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:gravity="bottom"
+            android:inputType="text"
+            android:enabled="false"
+            android:background="#D3D3D3"/>
+
+        <EditText
+            android:id="@+id/namechange"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="이름"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:gravity="bottom"
+            android:inputType="text"
+            android:enabled="false"
+            android:background="#D3D3D3"/>
+        <EditText
+            android:id="@+id/studentchange"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="학번"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:gravity="bottom"
+            android:inputType="text"
+            android:enabled="false"
+            android:background="#D3D3D3"/>
+        <EditText
+            android:id="@+id/genderchange"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="성별"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:gravity="bottom"
+            android:inputType="text"
+            android:enabled="false"
+            android:background="#D3D3D3"/>
+
+        <EditText
+            android:id="@+id/passchange"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="비밀번호"
+            android:textSize="20sp"
+            android:gravity="bottom"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/phonechange"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="휴대폰번호"
+            android:textSize="20sp"
+            android:gravity="bottom"
+            android:inputType="phone" />
+        <TextView
+            android:id="@+id/Helpannounce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="도움 알림 설정"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:id="@+id/Alimgroup"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/gendergjdyd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:layout_gravity="right"
+                android:text="허용"
+                android:fontFamily="@font/nanumgothicbold"/>
+            <RadioButton
+                android:id="@+id/genderdqlgjdyd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="비허용"
+                android:fontFamily="@font/nanumgothicbold"/>
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/change_password"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:onClick="passchangebutton"
+            android:text="비밀번호변경"
+            android:fontFamily="@font/nanumgothicbold"/>
+
+        <Button
+            android:id="@+id/delete_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:onClick="deletebutton"
+            android:text="회원탈퇴"
+            style="?android:attr/borderlessButtonStyle"
+            android:fontFamily="@font/nanumgothicbold"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/changebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="30dp"
+        android:onClick="changebutton"
+        android:text="정보 변경"
+        android:textSize="25sp"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/nanumgothicbold"
+        android:textColor="#FFFFFF"/>
+
+
+</LinearLayout>
+
+

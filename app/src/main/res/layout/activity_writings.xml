@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:onClick="writingokbutton"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backspace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/nanumgothicbold"
+            android:text="@string/x"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/writings"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/nanumgothicbold"
+            android:text="@string/Writings" />
+
+        <Button
+            android:id="@+id/writingok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:fontFamily="@font/nanumgothicbold"
+            android:onClick="writingokbutton"
+            android:text="@string/Clear"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/writingtitle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:autofillHints="제목"
+        android:ems="10"
+        android:fontFamily="@font/nanumgothicbold"
+        android:hint="제목" />
+
+    <EditText
+        android:id="@+id/writingcontent"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="12"
+        android:autofillHints="아이디"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/nanumgothicbold"
+        android:gravity="top"
+        android:hint="\n\n\n\n여기를 눌러서 글을 작성할 수 있습니다.\n\n욕설, 비하, 음란물, 개인정보가 포함된 게시물은 금지합니다.\n\n이를 위반한 경우 작성한 게시물이 삭제되거나, 글쓰기 제한 등의 제제가 가해질 수 있습니다.\n\n\n\n\n\n\n\n\n\n\n\n\n\n" />
+
+</LinearLayout>

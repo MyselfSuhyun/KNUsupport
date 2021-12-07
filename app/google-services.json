@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "353966807287",
+    "firebase_url": "https://potato-d212f.firebaseio.com",
+    "project_id": "potato-d212f",
+    "storage_bucket": "potato-d212f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353966807287:android:b8f687f58aed8502b75bf2",
+        "android_client_info": {
+          "package_name": "com.example.test6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353966807287-cj10mu1bhjeuttkgumcvu7o7c10uirgj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.test6",
+            "certificate_hash": "362d6c381d027e5e45e9792f34cdb8b14421d0cc"
+          }
+        },
+        {
+          "client_id": "353966807287-ci0ctq2jhrvp875q8kt2c21vdlct1u3g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5ux7bCjqRLN1HLtdvN0wWNIGlR-B5q_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353966807287-ci0ctq2jhrvp875q8kt2c21vdlct1u3g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

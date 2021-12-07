@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/back"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/ic_launcher_background"
+            android:fontFamily="@font/nanumgothicextrabold"
+            android:onClick="btn_logout"
+            android:text="@string/logout"
+            android:textColor="#6D91D2"
+            android:textSize="20sp"
+            app:srcCompat="@drawable/back">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/writings"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/nanumgothicbold"/>
+
+        <ImageView
+            android:id="@+id/addview"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/ic_launcher_background"
+            android:fontFamily="@font/nanumgothicextrabold"
+            android:onClick="btn_logout"
+            android:text="@string/logout"
+            android:textColor="#6D91D2"
+            android:textSize="20sp"
+            app:srcCompat="@drawable/addview">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/writing_id"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="아이디"
+            android:fontFamily="@font/nanumgothicextrabold"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/writing_time"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="글작성시간"
+            android:fontFamily="@font/nanumgothicbold"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:autofillHints="제목"
+        android:ems="10"
+        android:hint="제목"
+        android:fontFamily="@font/nanumgothicextrabold"/>
+
+    <TextView
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:ems="10"
+        android:hint="내용"
+        android:fontFamily="@font/nanumgothicbold"
+        android:background="@null"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="5">
+
+        <TextView
+            android:id="@+id/reply_id"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="아이디"
+            android:fontFamily="@font/nanumgothicextrabold"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/reply_content"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:ems="10"
+            android:hint="댓글내용"
+            android:fontFamily="@font/nanumgothicbold"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/reply_time"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="댓글작성시간"
+            android:fontFamily="@font/nanumgothicbold"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="2">
+
+        <EditText
+            android:id="@+id/write_reply"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="댓글작성"
+            android:fontFamily="@font/nanumgothicbold"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="완료"
+            android:fontFamily="@font/nanumgothicbold"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/round_button"/>
+
+
+    </LinearLayout>
+</LinearLayout>
