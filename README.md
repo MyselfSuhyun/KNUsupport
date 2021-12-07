@@ -1,7 +1,7 @@
 # KNUsupport
 졸업프로젝트
 ## Youtube 링크
-[바로이동]https://www.youtube.com/watch?v=AsnDqZ8o9uE
+[바로이동](https://www.youtube.com/watch?v=AsnDqZ8o9uE)
 
 ## 개발 일지
 ![image](https://user-images.githubusercontent.com/87465262/144983710-dc534033-9cfc-4c6e-945a-6557c151885b.png)
